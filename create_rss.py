@@ -135,8 +135,7 @@ def create_episode_items(json_object: dict) -> str:
     # if os.path.exists(f'{json_object.get("_embedded").get("podcast").get("titles").get("title").strip()}.epitems'):
     #     epitems = load_ep_items(f'{json_object.get("_embedded").get("podcast").get("titles").get("title").strip()}.epitems')
     items = json_to_episodeitem(json_object.get("items"))
-    load_ep_items(save_ep_items(items, json_object.get(
-        "_embedded").get("podcast").get("titles").get("title").strip()))
+    # load_ep_items(save_ep_items(items, json_object.get("_embedded").get("podcast").get("titles").get("title").strip()))
     for index, EpItem in enumerate(items):
         print(f"\ritem: {index+1} of {number_of_episodes}")
         itemstring += f"""<item>
