@@ -152,7 +152,7 @@ def create_episode_items(json_object: dict) -> str:
 
 
 if __name__ == "__main__":
-    os.chdir(os.path.dirname(os.path.abspath(__file__)))
+    #os.chdir(os.path.dirname(os.path.abspath(__file__)))
     podnames = ["berrum_beyer_snakker_om_greier", "abels_taarn",
                 "hele_historien", "trygdekontoret", "loerdagsraadet"]
     # if len(sys.argv) > 1:
